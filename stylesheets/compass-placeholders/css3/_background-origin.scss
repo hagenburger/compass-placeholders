@@ -1,0 +1,7 @@
+$background-origin-placeholders: padding-box, border-box, content-box !default;
+
+@each $property in $background-origin-placeholders {
+  %background-origin-#{$property} {
+    @include background-origin($property);
+  }
+}
