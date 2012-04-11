@@ -80,7 +80,7 @@ Compass CSS3 Placeholders
     * `@extend %background-clip-padding-box;`
     * `@extend %background-clip-border-box;`
     * `@extend %background-clip-text;`
-    * Customize list by setting `$background-clip-placeholders: none, normal;`
+    * Customize list by setting `$background-clip-placeholders: padding-box, border-box;`
 
 * **[Background origin](http://compass-style.org/reference/compass/css3/background_origin/):**
     * `@extend %background-origin-padding-box;`

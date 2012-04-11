@@ -1,0 +1,7 @@
+$background-clip-placeholders: padding-box, border-box, text !default;
+
+@each $property in $background-clip-placeholders {
+  %background-clip-#{$property} {
+    @include background-clip($property);
+  }
+}
