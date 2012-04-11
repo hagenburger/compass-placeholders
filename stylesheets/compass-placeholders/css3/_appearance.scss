@@ -1,0 +1,7 @@
+$appearance-placeholders: none, normal, icon, window, button, menu, field !default;
+
+@each $property in $appearance-placeholders {
+  %appearance-#{$property} {
+    @include appearance($property);
+  }
+}
