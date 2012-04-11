@@ -1,7 +1,9 @@
-require "compass-placeholders/version"
+require 'compass-placeholders/version'
+require 'compass'
 
-module Compass
-  module Placeholders
-    # Your code goes here...
-  end
+module CompassPlaceholders
+  BASE_PATH = File.join(File.dirname(__FILE__), '..')
 end
+
+Compass::Frameworks.register('compass-placeholders',
+                             :path => CompassPlaceholders::BASE_PATH)

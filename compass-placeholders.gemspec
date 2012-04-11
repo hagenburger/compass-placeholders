@@ -4,7 +4,7 @@ require "compass-placeholders/version"
 
 Gem::Specification.new do |s|
   s.name        = "compass-placeholders"
-  s.version     = Compass::Placeholders::VERSION
+  s.version     = CompassPlaceholders::VERSION
   s.authors     = ["Nico Hagenburger"]
   s.email       = ["nico@hagenburger.net"]
   s.homepage    = ""
