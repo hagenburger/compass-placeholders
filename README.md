@@ -227,3 +227,11 @@ Non Compass-related Placeholders
 * **User interface:**
     * `@extend %cursor-default;`
     * `@extend %cursor-pointer;`
+
+
+Copyright
+---------
+
+Copyright (c) 2012 [Nico Hagenburger](http://www.hagenburger.net).
+See blob/master/MIT-LICENSE.md for details.
+[Follow me](http://twitter.com/hagenburger) on twitter.
