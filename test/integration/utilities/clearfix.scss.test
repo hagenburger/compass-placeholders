@@ -1,0 +1,13 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %clearfix;
+}
+
+===
+
+#test {
+  overflow: hidden;
+  *zoom: 1;
+}
+
