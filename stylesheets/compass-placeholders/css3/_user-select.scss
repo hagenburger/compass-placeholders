@@ -1,0 +1,10 @@
+@import "compass/css3/user-interface";
+
+$user-select-placeholders: none, text, toggle, element, elements, all, inherit !default;
+
+@each $property in $user-select-placeholders {
+  %user-select-#{$property} {
+    @include user-select($property);
+  }
+}
+

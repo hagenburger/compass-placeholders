@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %user-select-none;
+}
+
+===
+
+#test {
+  user-select: none;
+}
+
