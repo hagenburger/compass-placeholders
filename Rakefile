@@ -16,6 +16,14 @@ task :add do
   placeholders = STDIN.gets.chomp.strip.split(/[ ,]+/)
 
   File.open "stylesheets/compass-placeholders/#{path}/_#{name}.scss", 'w' do |f|
+    if placeholders.empty?
+    f << <<-SCSS
+%#{name} {
+  @include #{name};
+}
+
+SCSS
+    else
     f << <<-SCSS
 $#{name}-placeholders: #{placeholders.join(', ')} !default;
 
@@ -26,16 +34,16 @@ $#{name}-placeholders: #{placeholders.join(', ')} !default;
 }
 
 SCSS
+    end
   end
 
   File.open "stylesheets/compass-placeholders/_#{path}.scss", 'a' do |f|
     f << %Q(@import "#{path}/#{name}";\n)
   end
 
-
-  test_value = placeholders.first
-  File.open "test/integration/#{path}/#{name}.scss.test", 'w' do |f|
-    f << <<-SCSS
+  if test_value = placeholders.first
+    File.open "test/integration/#{path}/#{name}.scss.test", 'w' do |f|
+      f << <<-SCSS
 @import "compass-placeholders";
 
 #test {
@@ -49,6 +57,24 @@ SCSS
 }
 
 SCSS
+    end
+  else
+    File.open "test/integration/#{path}/#{name}.scss.test", 'w' do |f|
+      f << <<-SCSS
+@import "compass-placeholders";
+
+#test {
+  @extend %#{name};
+}
+
+===
+
+#test {
+
+}
+
+SCSS
+    end
   end
 end
 
