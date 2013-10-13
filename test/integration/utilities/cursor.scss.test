@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %cursor-default;
+}
+
+===
+
+#test {
+  cursor: default;
+}
+

@@ -1,0 +1,8 @@
+$cursor-placeholders: default, pointer !default;
+
+@each $property in $cursor-placeholders {
+  %cursor-#{$property} {
+    cursor: $property;
+  }
+}
+
