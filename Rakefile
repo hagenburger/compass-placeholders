@@ -34,7 +34,7 @@ SCSS
 
 
   test_value = placeholders.first
-  File.open "test/integration/#{path}/#{name}.scss", 'w' do |f|
+  File.open "test/integration/#{path}/#{name}.scss.test", 'w' do |f|
     f << <<-SCSS
 @import "compass-placeholders";
 
