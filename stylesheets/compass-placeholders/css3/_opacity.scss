@@ -1,0 +1,16 @@
+$opacity-placeholders: 0, 0.5, 1 !default;
+
+@each $property in $opacity-placeholders {
+  %opacity-#{$property * 100} {
+    @include opacity($property);
+  }
+}
+
+%transparent {
+  @extend %opacity-0;
+}
+
+%opaque {
+  @extend %opacity-100;
+}
+

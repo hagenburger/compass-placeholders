@@ -1,0 +1,15 @@
+@import "compass-placeholders";
+
+#test {
+  // Shound only generate one selector:
+  @extend %opacity-0;
+  @extend %transparent;
+}
+
+===
+
+#test {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
