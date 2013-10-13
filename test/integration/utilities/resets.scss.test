@@ -1,0 +1,27 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %no-background;
+  @extend %no-border;
+  @extend %no-margin;
+  @extend %no-padding;
+}
+
+===
+
+#test {
+  background: transparent;
+}
+
+#test {
+  border: 0;
+}
+
+#test {
+  margin: 0;
+}
+
+#test {
+  padding: 0;
+}
+
