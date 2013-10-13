@@ -1,0 +1,8 @@
+$display-placeholders: none, block, inline-block, table, table-cell, table-row !default;
+
+@each $property in $display-placeholders {
+  %display-#{$property} {
+    display: $property;
+  }
+}
+

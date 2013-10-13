@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %display-none;
+}
+
+===
+
+#test {
+  display: none;
+}
+
