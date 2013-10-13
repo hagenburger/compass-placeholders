@@ -1,0 +1,4 @@
+%no-box-shadow {
+  @include box-shadow(none);
+}
+

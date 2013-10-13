@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %no-box-shadow;
+}
+
+===
+
+#test {
+  box-shadow: none;
+}
+
