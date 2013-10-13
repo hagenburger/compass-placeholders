@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %box-sizing-border-box;
+}
+
+===
+
+#test {
+  box-sizing: border-box;
+}
+

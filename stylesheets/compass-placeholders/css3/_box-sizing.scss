@@ -1,0 +1,8 @@
+$box-sizing-placeholders: content-box, border-box !default;
+
+@each $property in $box-sizing-placeholders {
+  %box-sizing-#{$property} {
+    @include box-sizing($property);
+  }
+}
+
