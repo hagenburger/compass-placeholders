@@ -1,0 +1,15 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %hover-link;
+}
+
+===
+
+#test {
+  text-decoration: none;
+}
+#test:hover {
+  text-decoration: underline;
+}
+
