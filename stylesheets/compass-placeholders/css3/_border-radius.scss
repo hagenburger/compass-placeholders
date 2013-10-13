@@ -1,0 +1,9 @@
+$border-radius-placeholders: none !default;
+
+@if $border-radius-placeholders {
+  @each $property in $border-radius-placeholders {
+    %border-radius-#{$property} {
+      @include border-radius($property);
+    }
+  }
+}

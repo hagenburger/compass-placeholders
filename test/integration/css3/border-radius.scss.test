@@ -1,0 +1,22 @@
+$border-radius-placeholders: none, 5px;
+
+@import "compass-placeholders";
+
+#test-none {
+  @extend %border-radius-none;
+}
+
+#test-5px {
+  @extend %border-radius-5px;
+}
+
+===
+
+#test-none {
+  border-radius: none;
+}
+
+#test-5px {
+  border-radius: 5px;
+}
+
