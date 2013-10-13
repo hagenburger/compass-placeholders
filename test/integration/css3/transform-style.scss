@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %transform-style-flat;
+}
+
+===
+
+#test {
+  transform-style: flat;
+}
+

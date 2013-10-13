@@ -1,0 +1,8 @@
+$transform-style-placeholders: flat, preserve-3d !default;
+
+@each $property in $transform-style-placeholders {
+  %transform-style-#{$property} {
+    @include transform-style($property);
+  }
+}
+
