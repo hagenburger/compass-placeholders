@@ -1,0 +1,32 @@
+$font-weight-placeholders: normal, bold;
+
+@each $property in $font-weight-placeholders {
+  %font-weight-#{$property} {
+    font-weight: $property;
+  }
+}
+
+$font-style-placeholders: normal, italic;
+
+@each $property in $font-style-placeholders {
+  %font-style-#{$property} {
+    font-style: $property;
+  }
+}
+
+$text-decoration-placeholders: none, underline;
+
+@each $property in $text-decoration-placeholders {
+  %text-decoration-#{$property} {
+    text-decoration: $property;
+  }
+}
+
+$text-align-placeholders: left, center, right, justify;
+
+@each $property in $text-align-placeholders {
+  %text-align-#{$property} {
+    text-align: $property;
+  }
+}
+

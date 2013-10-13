@@ -1,0 +1,27 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %font-weight-bold;
+  @extend %font-style-italic;
+  @extend %text-decoration-underline;
+  @extend %text-align-right;
+}
+
+===
+
+#test {
+  font-weight: bold;
+}
+
+#test {
+  font-style: italic;
+}
+
+#test {
+  text-decoration: underline;
+}
+
+#test {
+  text-align: right;
+}
+
