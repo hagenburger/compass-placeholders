@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %backface-visibility-visible;
+}
+
+===
+
+#test {
+  backface-visibility: visible;
+}
+

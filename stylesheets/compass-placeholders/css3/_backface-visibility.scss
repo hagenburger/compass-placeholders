@@ -1,0 +1,8 @@
+$backface-visibility-placeholders: visible, hidden !default;
+
+@each $property in $backface-visibility-placeholders {
+  %backface-visibility-#{$property} {
+    @include backface-visibility($property);
+  }
+}
+
