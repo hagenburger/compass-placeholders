@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %background-origin-padding-box;
+}
+
+===
+
+#test {
+  background-origin: padding-box;
+}
+

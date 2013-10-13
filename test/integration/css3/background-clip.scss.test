@@ -1,0 +1,12 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %background-clip-padding-box;
+}
+
+===
+
+#test {
+  background-clip: padding-box;
+}
+
