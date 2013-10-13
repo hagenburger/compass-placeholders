@@ -1,0 +1,37 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %display-box;
+  @extend %box-orient-horizontal;
+  @extend %box-align-start;
+  @extend %box-direction-normal;
+  @extend %box-lines-single;
+  @extend %box-pack-start;
+}
+
+===
+
+#test {
+  display: box;
+}
+
+#test {
+  box-orient: horizontal;
+}
+
+#test {
+  box-align: start;
+}
+
+#test {
+  box-direction: normal;
+}
+
+#test {
+  box-lines: single;
+}
+
+#test {
+  box-pack: start;
+}
+

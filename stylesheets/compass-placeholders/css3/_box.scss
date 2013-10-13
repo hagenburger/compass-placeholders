@@ -1,0 +1,45 @@
+%display-box {
+  @include display-box;
+}
+
+$box-orient-placeholders: horizontal, vertical, inline-axis, block-axis,
+inherit !default;
+
+@each $property in $box-orient-placeholders {
+  %box-orient-#{$property} {
+    @include box-orient($property);
+  }
+}
+
+$box-align-placeholders: start, end, center, baseline, stretch !default;
+
+@each $property in $box-align-placeholders {
+  %box-align-#{$property} {
+    @include box-align($property);
+  }
+}
+
+$box-direction-placeholders: normal, reverse, inherit !default;
+
+@each $property in $box-direction-placeholders {
+  %box-direction-#{$property} {
+    @include box-direction($property);
+  }
+}
+
+$box-lines-placeholders: single, multiple !default;
+
+@each $property in $box-lines-placeholders {
+  %box-lines-#{$property} {
+    @include box-lines($property);
+  }
+}
+
+$box-pack-placeholders: start, end, center, justify !default;
+
+@each $property in $box-pack-placeholders {
+  %box-pack-#{$property} {
+    @include box-pack($property);
+  }
+}
+
