@@ -1,0 +1,5 @@
+{
+  "name": "Compass Placeholders",
+  "tags": ["performance"],
+  "description": "@extendable %placeholders for common CSS3 code provided by Compass. For example use `@extend %hide-text;` instead of `@include hide-text;` to save file size and speed up rendering."
+}
