@@ -67,8 +67,6 @@ Result (DRY – don’t repeat yourself):
       text-decoration: underline;
     }
 
-(Be shure
-
 
 Compass CSS3 Placeholders
 -------------------------
