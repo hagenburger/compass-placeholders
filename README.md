@@ -242,7 +242,7 @@ Setup
 First install the gems and create a project:
 
     gem install compass
-    gem install compass-placeholders
+    gem install compass-placeholders --pre
     compass create my-project
 
 Second add to your my-project/**compass.rb**:
