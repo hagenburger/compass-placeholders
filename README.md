@@ -12,6 +12,8 @@ Example: hover-link
 
 Traditional way via [Compass](http://compass-style.org/):
 
+    @import "compass";
+
     a.first-link {
       @include hover-link;
     }
@@ -42,6 +44,9 @@ Result:
 
 Optimized way via **Compass Placeholders:**
 
+    @import "compass";
+    @import "compass-placeholders";
+
     a.first-link {
       @extend %hover-link;
     }
@@ -61,6 +66,8 @@ Result (DRY – don’t repeat yourself):
     a.second-link:hover {
       text-decoration: underline;
     }
+
+(Be shure
 
 
 Compass CSS3 Placeholders
@@ -227,6 +234,28 @@ Non Compass-related Placeholders
 * **User interface:**
     * `@extend %cursor-default;`
     * `@extend %cursor-pointer;`
+
+
+Setup
+-----
+
+First install the gems and create a project:
+
+    gem install compass
+    gem install compass-placeholders
+    compass create my-project
+
+Second add to your my-project/**compass.rb**:
+
+    require "compass-placeholders"
+
+Third import _Compass-Placeholders_ after _Compass_ in your Sass/SCSS
+file:
+
+    @import "compass";
+    @import "compass-placeholders";
+
+    // now you can use `@extend %hover-link` etc.
 
 
 Copyright
