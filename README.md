@@ -81,13 +81,13 @@ Compass CSS3 Placeholders
     * `@extend %appearance-button;`
     * `@extend %appearance-menu;`
     * `@extend %appearance-field;`
-    * Customize list by setting `$appearance-placeholders: none, normal;`
+    * [Customize list](#using-customized-placeholders) by setting `$appearance-placeholders: none, normal;`
 
 * **[Background clip](http://compass-style.org/reference/compass/css3/background_clip/):**
     * `@extend %background-clip-padding-box;`
     * `@extend %background-clip-border-box;`
     * `@extend %background-clip-text;`
-    * Customize list by setting `$background-clip-placeholders: padding-box, border-box;`
+    * [Customize list](#using-customized-placeholders) by setting `$background-clip-placeholders: padding-box, border-box;`
 
 * **[Background origin](http://compass-style.org/reference/compass/css3/background_origin/):**
     * `@extend %background-origin-padding-box;`
@@ -96,7 +96,7 @@ Compass CSS3 Placeholders
 
 * **[Border radius](http://compass-style.org/reference/compass/css3/border_radius/):**
     * `@extend %no-border-radius;` (equals border-radius: 0)
-    * Create placeholders for `border-radius` by setting `$border-radius-placeholders: 0, 3px, 10px;` which results in:
+    * [Create placeholders](#using-customized-placeholders) for `border-radius` by setting `$border-radius-placeholders: 0, 3px, 10px;` which results in:
         * `@extend %border-radius-0;`
         * `@extend %border-radius-3px;`
         * `@extend %border-radius-10px;`
@@ -124,7 +124,7 @@ Compass CSS3 Placeholders
     * `@extend %box-pack-end;`
     * `@extend %box-pack-center;`
     * `@extend %box-pack-justify;`
-    * Customize lists by setting `$box-orient-placeholders`, `$box-align-placeholders`, `$box-direction-placeholders`, `$box-lines-placeholders` and `$box-pack-placeholders`.
+    * [Customize lists](#using-customized-placeholders) by setting `$box-orient-placeholders`, `$box-align-placeholders`, `$box-direction-placeholders`, `$box-lines-placeholders` and `$box-pack-placeholders`.
     * Create placeholders for `box-flex` by setting `$box-flex-placeholders: 0, 1;` which results in:
         * `@extend %box-flex-0;`
         * `@extend %box-flex-1;`
@@ -141,12 +141,12 @@ Compass CSS3 Placeholders
 * **[Box sizing](http://compass-style.org/reference/compass/css3/box_sizing/):**
     * `@extend %box-sizing-content-box;`
     * `@extend %box-sizing-border-box;`
-    * Customize list by setting `$box-sizing-placeholders: border-box;`
+    * [Customize list](#using-customized-placeholders) by setting `$box-sizing-placeholders: border-box;`
 
 * **[Opacity](http://compass-style.org/reference/compass/css3/opacity/):**
     * `@extend %transparent;`
     * `@extend %opaque;`
-    * Create placeholders for `opacity` by setting `$opacity-placeholders: 0.25, 0.5;` which results in:
+    * [Create placeholders](#using-customized-placeholders) for `opacity` by setting `$opacity-placeholders: 0.25, 0.5;` which results in:
         * `@extend %opacity-25;`
         * `@extend %opacity-50;`
 
@@ -167,7 +167,7 @@ Compass CSS3 Placeholders
     * `@extend %user-select-elements;`
     * `@extend %user-select-all;`
     * `@extend %user-select-inherit;`
-    * Customize list by setting `$user-select-placeholders: none, text;`
+    * [Customize list](#using-customized-placeholders) by setting `$user-select-placeholders: none, text;`
 
 
 Compass Typography Placeholders
@@ -217,7 +217,7 @@ Non Compass-related Placeholders
     * `@extend %display-table;`
     * `@extend %display-table-cell;`
     * `@extend %display-table-row;`
-    * Customize list by setting `$display-placeholders: none, block;`
+    * [Customize list](#using-customized-placeholders) by setting `$display-placeholders: none, block;`
 
 * **Typography:**
     * `@extend %font-weight-bold;`
