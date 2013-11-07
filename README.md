@@ -68,6 +68,8 @@ Result (DRY – don’t repeat yourself):
     }
 
 
+
+
 Compass CSS3 Placeholders
 -------------------------
 
@@ -232,6 +234,37 @@ Non Compass-related Placeholders
 * **User interface:**
     * `@extend %cursor-default;`
     * `@extend %cursor-pointer;`
+
+
+Using Customized Placeholders
+-----------------------------
+
+Some placeholders/value combinations are optionional. For example the
+`appearance` will have placeholders for `none` and `normal` by default:
+
+    @import "compass";
+    @import "compass-placeholders";
+
+    .my-class {
+      @extend %appearance-none;     // OK
+      @extend %appearance-button;   // Error
+      @extend %border-radius-none;  // OK
+      @extend %border-radius-3px;   // Error
+    }
+
+You need to set the customized list before you call `@import "compass-placeholders";`:
+
+    $appearance-placeholders: none, normal, button;
+    $border-radius-placeholders: none, 3px;
+    @import "compass";
+    @import "compass-placeholders";
+
+    .my-class {
+      @extend %appearance-none;     // OK
+      @extend %appearance-button;   // OK
+      @extend %border-radius-none;  // OK
+      @extend %border-radius-3px;   // OK
+    }
 
 
 Setup
