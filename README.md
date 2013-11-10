@@ -151,7 +151,7 @@ Compass CSS3 Placeholders
         * `@extend %opacity-50;`
 
 * **[Text shadow](http://compass-style.org/reference/compass/css3/text-shadow/):**
-    * `@extend %no-text-shadow;`
+    * `@extend %text-shadow-none;`
 
 * **[Transform](http://compass-style.org/reference/compass/css3/transform/):**
     * `@extend %transform-style-flat;`
