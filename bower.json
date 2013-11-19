@@ -1,0 +1,5 @@
+{
+  "name": "compass-placeholders",
+  "version": "1.0.0.rc.2",
+  "main": "stylesheets/_compass-placeholders.scss"
+}
