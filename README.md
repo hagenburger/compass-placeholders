@@ -219,6 +219,11 @@ Non Compass-related Placeholders
     * `@extend %display-table-row;`
     * [Customize list](#using-customized-placeholders) by setting `$display-placeholders: none, block;`
 
+* **Float:**
+    * `@extend %float-none;`
+    * `@extend %float-left;`
+    * `@extend %float-right;`
+
 * **Typography:**
     * `@extend %font-weight-bold;`
     * `@extend %font-weight-normal;`
