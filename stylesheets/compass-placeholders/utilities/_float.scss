@@ -1,0 +1,8 @@
+$float-placeholders: none, left, right !default;
+
+@each $property in $float-placeholders {
+  %float-#{$property} {
+    @include float($property);
+  }
+}
+

@@ -1,0 +1,13 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %float-none;
+}
+
+===
+
+#test {
+  display: inline;
+  float: none;
+}
+
