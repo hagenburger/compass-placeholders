@@ -1,3 +1,42 @@
+$list-style-placeholders: none, disc, square, inside, outside;
+
+@each $property in $list-style-placeholders {
+  %list-style-#{$property} {
+    list-style: $property;
+  }
+}
+
+
+$list-style-image-placeholders: none;
+
+@each $property in $list-style-image-placeholders {
+  %list-style-image-#{$property} {
+    list-style-image: $property;
+  }
+}
+
+
+$list-style-position-placeholders: inside, outside;
+
+@each $property in $list-style-position-placeholders {
+  %list-style-position-#{$property} {
+    list-style-position: $property;
+  }
+}
+
+
+$list-style-type-placeholders: disc, circle, square, 
+  decimal, decimal-leading-zero,
+  lower-roman, upper-roman, lower-greek, lower-latin, upper-latin,
+  armenian, georgian, lower-alpha, upper-alpha, none;
+
+@each $property in $list-style-type-placeholders {
+  %list-style-type-#{$property} {
+    list-style-type: $property;
+  }
+}
+
+
 %no-bullet {
   @include no-bullet;
 }

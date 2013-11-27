@@ -1,4 +1,26 @@
 @import "compass-placeholders";
 
+#test {
+  @extend %list-style-none;
+  @extend %list-style-image-none;
+  @extend %list-style-position-inside;
+  @extend %list-style-type-disc;
+}
+
 ===
 
+#test {
+  list-style: none;
+}
+
+#test {
+  list-style-image: none;
+}
+
+#test {
+  list-style-position: inside;
+}
+
+#test {
+  list-style-type: disc;
+}
