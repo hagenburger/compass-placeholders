@@ -359,7 +359,7 @@ compass create my-project
 Second add to your my-project/**compass.rb**:
 
 ~~~ ruby
-// compass.rb
+# compass.rb
 require "compass-placeholders"
 ~~~
 
