@@ -120,7 +120,8 @@ $border-radius-placeholders: 0, 3px, 10px;
 @extend %border-radius-3px;
 @extend %border-radius-10px;
 
-// You should prefer to use custom names like %small-border-radius and %big-border-radius over those listed above.
+// You should prefer to use custom names like %small-border-radius
+// and %big-border-radius over those listed above.
 ~~~
 
 
