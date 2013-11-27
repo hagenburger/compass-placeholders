@@ -1,7 +1,7 @@
 @import "compass-placeholders";
 
 #test {
-  @extend %text-shadow-none;
+  @extend %no-text-shadow;
 }
 
 ===

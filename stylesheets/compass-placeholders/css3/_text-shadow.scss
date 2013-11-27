@@ -1,8 +1,4 @@
-$text-shadow-placeholders: none !default;
-
-@each $property in $text-shadow-placeholders {
-  %text-shadow-#{$property} {
-    @include text-shadow($property);
-  }
+%no-text-shadow {
+  @include text-shadow(none);
 }
 
