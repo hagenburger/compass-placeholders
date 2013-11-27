@@ -314,6 +314,18 @@ Non Compass-related Placeholders
 @extend %float-right;
 ~~~
 
+### Lists
+~~~ scss
+@extend %list-style-none;
+@extend %list-style-image-none;
+@extend %list-style-position-inside;
+@extend %list-style-position-outside;
+@extend %list-style-type-disc;
+@extend %list-style-type-circle;
+@extend %list-style-type-square;
+~~~
+
+
 
 Using Customized Placeholders
 -----------------------------
