@@ -89,9 +89,6 @@ Compass CSS3 Placeholders
 @extend %appearance-button;
 @extend %appearance-menu;
 @extend %appearance-field;
-
-// Customize list by setting:
-$appearance-placeholders: none, normal;
 ~~~
 
 
@@ -100,9 +97,6 @@ $appearance-placeholders: none, normal;
 @extend %background-clip-padding-box;
 @extend %background-clip-border-box;
 @extend %background-clip-text;
-
-// Customize list by setting:
-$background-clip-placeholders: padding-box, border-box;
 ~~~
 
 
@@ -180,9 +174,6 @@ $box-ordinal-group-placeholders: 1, 2;
 ~~~ scss
 @extend %box-sizing-content-box;
 @extend %box-sizing-border-box;
-
-// Customize list by setting:
-$box-sizing-placeholders: border-box;
 ~~~
 
 
@@ -224,9 +215,6 @@ $opacity-placeholders: 0.25, 0.5;
 @extend %user-select-elements;
 @extend %user-select-all;
 @extend %user-select-inherit;
-
-// Customize list by setting:
-$user-select-placeholders: none, text;
 ~~~
 
 
@@ -294,9 +282,6 @@ Non Compass-related Placeholders
 @extend %display-table;
 @extend %display-table-cell;
 @extend %display-table-row;
-
-// Customize list:
-$display-placeholders: none, block;
 ~~~
 
 
