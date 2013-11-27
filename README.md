@@ -318,9 +318,7 @@ Some placeholders/value combinations are optionional. For example the
 @import "compass-placeholders";
 
 .my-class {
-  @extend %appearance-none;     // OK
-  @extend %appearance-button;   // Error
-  @extend %border-radius-none;  // OK
+  @extend %border-radius-none;  // OK (as `none` is in the default list`)
   @extend %border-radius-3px;   // Error
 }
 ~~~
@@ -328,14 +326,11 @@ Some placeholders/value combinations are optionional. For example the
 You need to set the customized list before you call `@import "compass-placeholders";`:
 
 ~~~ scss
-$appearance-placeholders: none, normal, button;
 $border-radius-placeholders: none, 3px;
 @import "compass";
 @import "compass-placeholders";
 
 .my-class {
-  @extend %appearance-none;     // OK
-  @extend %appearance-button;   // OK
   @extend %border-radius-none;  // OK
   @extend %border-radius-3px;   // OK
 }
