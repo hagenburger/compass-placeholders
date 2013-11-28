@@ -25,7 +25,7 @@ $list-style-position-placeholders: inside, outside;
 }
 
 
-$list-style-type-placeholders: disc, circle, square, 
+$list-style-type-placeholders: disc, circle, square,
   decimal, decimal-leading-zero,
   lower-roman, upper-roman, lower-greek, lower-latin, upper-latin,
   armenian, georgian, lower-alpha, upper-alpha, none;
@@ -41,9 +41,11 @@ $list-style-type-placeholders: disc, circle, square,
   @include no-bullet;
 }
 
+
 %no-bullets {
   @include no-bullets;
 }
+
 
 %inline-list {
   @include inline-list;
