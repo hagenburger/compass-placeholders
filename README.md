@@ -307,12 +307,14 @@ Non Compass-related Placeholders
 @extend %cursor-pointer;
 ~~~
 
+
 ### Float
 ~~~ scss
 @extend %float-none;
 @extend %float-left;
 @extend %float-right;
 ~~~
+
 
 ### Lists
 ~~~ scss
