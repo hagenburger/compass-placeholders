@@ -6,9 +6,11 @@ $opacity-placeholders: 0, 0.5, 1 !default;
   }
 }
 
+
 %transparent {
   @extend %opacity-0;
 }
+
 
 %opaque {
   @extend %opacity-100;

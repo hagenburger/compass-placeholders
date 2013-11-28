@@ -5,3 +5,4 @@ $background-clip-placeholders: padding-box, border-box, text !default;
     @include background-clip($property);
   }
 }
+

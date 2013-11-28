@@ -6,6 +6,7 @@ $font-weight-placeholders: normal, bold;
   }
 }
 
+
 $font-style-placeholders: normal, italic;
 
 @each $property in $font-style-placeholders {
@@ -13,6 +14,7 @@ $font-style-placeholders: normal, italic;
     font-style: $property;
   }
 }
+
 
 $text-decoration-placeholders: none, underline;
 
@@ -22,6 +24,7 @@ $text-decoration-placeholders: none, underline;
   }
 }
 
+
 $text-align-placeholders: left, center, right, justify;
 
 @each $property in $text-align-placeholders {
@@ -30,6 +33,7 @@ $text-align-placeholders: left, center, right, justify;
   }
 }
 
+
 $text-transform-placeholders: none, capitalize, uppercase, lowercase, full-width;
 
 @each $property in $text-transform-placeholders {
@@ -37,3 +41,4 @@ $text-transform-placeholders: none, capitalize, uppercase, lowercase, full-width
     text-transform: $property;
   }
 }
+
