@@ -298,6 +298,11 @@ Non Compass-related Placeholders
 @extend %text-align-center;
 @extend %text-align-right;
 @extend %text-align-justify;
+@extend %text-transform-none;
+@extend %text-transform-capitalize;
+@extend %text-transform-uppercase;
+@extend %text-transform-lowercase;
+@extend %text-transform-full-width;
 ~~~
 
 

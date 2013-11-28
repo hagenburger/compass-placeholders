@@ -5,6 +5,7 @@
   @extend %font-style-italic;
   @extend %text-decoration-underline;
   @extend %text-align-right;
+  @extend %text-transform-uppercase;
 }
 
 ===
@@ -25,3 +26,6 @@
   text-align: right;
 }
 
+#test {
+  text-transform: uppercase;
+}
