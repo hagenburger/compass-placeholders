@@ -1,0 +1,14 @@
+@import "compass-placeholders";
+
+#test {
+  @extend %vertical-align;
+}
+
+===
+
+#test {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
