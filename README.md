@@ -409,7 +409,7 @@ a {
 Copyright
 ---------
 
-Copyright (c) 2012 – 2013 [Nico Hagenburger](http://www.hagenburger.net).
+Copyright (c) 2012 – 2014 [Nico Hagenburger](http://www.hagenburger.net).
 See [MIT-LICENSE.md](MIT-LICENSE.md) for details.
 [Follow me](http://twitter.com/hagenburger) on Twitter.
 
