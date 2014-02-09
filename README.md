@@ -1,6 +1,8 @@
 Compass Placeholders
 ====================
 
+[![Build Status](https://travis-ci.org/hagenburger/compass-placeholders.png?branch=master)](https://travis-ci.org/hagenburger/compass-placeholders)
+
 @extendable %placeholders for common CSS3 code provided by Compass.
 
 For example use `@extend %hide-text;` instead of `@include hide-text;` this
