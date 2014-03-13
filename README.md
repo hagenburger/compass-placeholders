@@ -281,6 +281,7 @@ Non Compass-related Placeholders
 ~~~ scss
 @extend %display-none;
 @extend %display-block;
+@extend %display-inline;
 @extend %display-inline-block;
 @extend %display-table;
 @extend %display-table-cell;
